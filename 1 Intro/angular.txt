@@ -1,0 +1,291 @@
+AngularJS Overview:
+===================
+
+	* The Big Picture
+	* Views, Directives and Filters
+	* Controllers, scope and Modules
+	* Routing
+	* Animation
+	* Services and Factories
+
+	* The Big Picture
+	* Views, Directives and Filters
+	* Controllers,scope and Modules
+	* Routing
+	* Animation
+	* Services and Factories
+
+
+	Introduction:
+	=============
+
+	SPA Overview
+	Jumping into AngularJS
+	Key Players in AngularJS
+	AngularJS Documentation
+
+	SPA Overview:
+	=============
+
+	Different views for a single shell page
+	SPA maintains a history of views.
+
+
+	Challenge with SPA's:
+	=====================
+
+	DOM Manipulation
+	History
+	AJAX
+	Data Binding
+
+	Full Featured SPA Framework
+
+	Data Binding
+	 MVC
+	 Routing
+	 Testing
+	 jqLite
+	 Templates
+	 History
+	 Factories
+
+	 ViewModel
+	 Controllers
+	 Views
+	 Directives
+	 Services
+	 Dependency Injection
+	 Validation
+
+
+	 Jumping into AngularJS:
+	 =======================
+
+	* Add ng-app directives.
+	* Bind data using directives.
+
+	CDN or local hosted AngularJS.
+
+	CDN or local hosted AngularJS.
+
+	<!DOCTYPE HTML>
+	<html ng-app="">
+	</html>
+
+	Key Players in AngularJS:
+	=========================
+
+	Understand different parts => Lego blocks
+	Understand how different parts fit together
+	Understand how to organize parts
+
+
+	The Big Picture:
+	================
+
+			Modules
+			Routes
+
+			UI 						Logic/Data
+
+			view 					Controllers
+			Directives 	 $scope		Factory
+			Filters 				Service
+
+
+	Module
+
+	Config
+
+	Routes
+
+	View 	$scope 		Controller 
+	Directives			Factory
+
+
+	Modules:
+	========
+
+	Modules are containers for:
+
+		* Controllers
+		* Routes
+		* Factories/Services
+		* Directives
+		* Filters
+
+	Factory/Service: => Little Lego's block that go inside containers
+	=================================================================
+
+		Load data using Factory/Service.
+		Make RESTful calls.
+		Share data between controllers.
+		Handle custom logic.
+		Are Singletons.
+
+
+	Controllers:
+	============
+
+		Controllers are the brain for a view.
+
+		Retrieve data from factory/service and store it.
+		Handle events triggered by the view.
+		Know how to handle custom logic.
+		Rely on the $scope object to interact with the view.
+
+	What is a scope?
+	================
+
+	View  <=> 	$scope <=> Controller
+
+	$scope is the glue (ViewModel) between a controller and a view.
+
+
+	Views:
+	======
+
+		Render the HTML and CSS.
+		Bind data provided by $scope object.
+		use directives to enhance HTML and render data.
+
+
+	Routes: Unqiue Path
+	=======
+
+		Each route has an unique path:
+
+		Defines which view and controller to load.
+
+		*   Reference a controller and view
+		* 	Can include route parameters.
+
+		/customers => customer.html => CustomerCtrl
+
+
+
+
+
+
+	The Big Picture:
+	================
+
+		Module
+
+		Config
+
+		Routes
+
+		View / Directives   <=> $scope <=> Controller <=> Factory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
