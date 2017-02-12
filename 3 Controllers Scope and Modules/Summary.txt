@@ -1,0 +1,12 @@
+Summary:
+========
+
+	AngularjS relies on MVC and MVVM architectural pattern
+
+	Controller acts as "brain" for views
+
+		Know how to retrieve and store data.
+
+		Interact to view using $scope.
+
+	Modules act as containers for AngularJS apps.
