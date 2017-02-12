@@ -1,0 +1,55 @@
+Directives and Expressions:
+=========================
+
+	Directives teach HTML new tricks.
+	Little lego blocks.
+
+	DOM Manipulation:
+	=================
+
+	ng-show
+	ng-hide
+	ng-repeat
+	ng-view
+
+
+	Modules/controllers:
+	====================
+
+	ng-app
+	ng-controller
+
+	Data-Binding:
+	============
+
+	ng-model
+	ng-bind
+	ng-init
+
+	Events:
+	========
+
+	ng-click
+	ng-keypress
+	ng-mouseenter
+
+
+	"Most Directives are used as attributes"
+
+
+	<div ng-hide="isHidden">
+	<div data-ng-hide="isHidden">
+
+	Can also be used as tags:
+	=========================
+
+	<ng-view></ng-view>
+
+	AngularJS Expressions:
+	=====================
+
+	Expressions are code snippets placed in binding markup
+
+		{{ 1 + 1 }}
+
+

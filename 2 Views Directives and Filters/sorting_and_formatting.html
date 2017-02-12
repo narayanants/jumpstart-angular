@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Angular sorting and formatting</title>
+</head>
+<body ng-init="customers=[{joined:'2002-20-02',name:'Narayanan',city:'Chennai',orderTotal:9.9956}]">
+	<h2>Customers</h2>
+	Filter:<input type="text" />
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>City</th>
+			<th>Order Total</th>
+			<th>Joined</th>
+		</tr>
+		<tr ng-repeat="cust in customers">
+			<td>{{cust.name | uppercase}}</td>
+			<td>{{cust.city}}</td>
+			<td>{{cust.orderTotal | currency:'y'}}</td>
+			<td>{{cust.joined | date}}</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="angular.js"></script>
+</body>
+</html>

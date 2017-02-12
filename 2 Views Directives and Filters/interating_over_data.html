@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Angular ng-repeat</title>
+</head>
+<body ng-init="people=[{name:'Narayanan',city:'chennai'},{name:'Gokul',city:'Chennai'}]">
+	<ul>
+		<li ng-repeat="person in people">{{person.name}} - {{person.city}}</li>
+	</ul>
+	<br>
+	<table ng-repeat="person in people">
+		<tr>
+			<td>Name</td>
+			<td>City</td>
+		</tr>
+		<tr>
+			<td>{{person.name}}</td>
+			<td>{{person.city}}</td>
+		</tr>
+	</table>
+	<script type="text/javascript"></script>
+</body>
+</html>

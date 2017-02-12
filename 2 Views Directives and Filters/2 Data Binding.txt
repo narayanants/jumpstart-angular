@@ -1,0 +1,19 @@
+Data Binding:
+-------------
+
+ Write less code.
+ Eliminate lot of DOM code.
+
+
+ Control oriented vs data oriented:
+ -----------------------------------
+
+
+ Data oriented:
+ --------------
+
+ 	no need for id's and name
+ 	wire up a propert to a control.
+ 	if property changes control changes.
+
+ 
