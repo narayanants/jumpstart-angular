@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Angular sorting and formatting</title>
+</head>
+<body data-ng-controller="CustomerCtrl as cust">
+	<h2>Customers</h2>
+	Filter:<input type="text" data-ng-model="cust.customerFilter.name" />
+	<table>
+		<tr>
+			<th data-ng-click="doSort(name)">Name</th>
+			<th data-ng-click="doSort(city)">City</th>
+			<th data-ng-click="doSort(orderTotal)">Order Total</th>
+			<th data-ng-click="doSort(joined)">Joined</th>
+		</tr>
+		<tr data-ng-repeat="customer in cust.customers | filter:'customerFilter'| orderBy:sortBy:reverse | limitTo:2">
+			<td>{{customer.name | uppercase}}</td>
+			<td>{{customer.city | lowercase}}</td>
+			<td>{{customer.orderTotal | currency:'y'}}</td>
+			<td>{{customer.joined | date}}</td>
+		</tr>
+	</table>
+	<br>
+	<span>Total Customers:{{cust.customers.length}}</span>
+	<ng-view></ng-view>
+	<script type="text/javascript" src="scripts/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-route.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/CustomerCtrl.js"></script>
+</body>
+</html>

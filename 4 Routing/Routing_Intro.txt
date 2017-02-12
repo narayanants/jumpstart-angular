@@ -1,0 +1,32 @@
+Routes:
+=======
+
+	* AngularJS  routes associate a view and a controller.
+	* relies on ngRoute Module.
+	* Routes are configured using $routeProvider.
+
+
+	Routing and Modules:
+	=====================
+
+	Routes are configured using angular.module.config()
+
+	$routeProvider injected automatically.
+
+	/customer => customer.html and CustCtrl
+
+	/orders => orders.html and OrderCtrl
+
+
+	Referencing the ngRoute Module:
+	==============================
+
+		AngularJS routing functionality is located in the ngRoute module.
+
+		Add a <script> that loads angular-route.js
+
+		Reference ngRoute in your module:
+
+			var demoApp = angular.module('demoApp',['ngRoute']);
+
+		
