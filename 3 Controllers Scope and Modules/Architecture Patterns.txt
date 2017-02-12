@@ -1,0 +1,9 @@
+Architecture Pattern:
+=====================
+
+	AngularJS Architecute Patterns
+	The role of containers
+	ng-controller directive
+	the role of modules
+
+	

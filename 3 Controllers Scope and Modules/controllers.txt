@@ -1,0 +1,28 @@
+The Role of Controllers:
+======================
+
+	*  Brain of view
+	* properties and methods
+	* Handle Events
+	* Knows how to retrieve data
+	* Interacts with view using $scope object.
+
+	View  <=> Controller
+
+
+	$scope is injected into controller dynamically.
+
+	Acts as ViewModel
+
+	view binds to scope	properties and methods
+
+	<script>
+	function SimpleCtrl($scope){
+		$scope.customers = [
+			{name:'Narayanan',city:'chennai'},
+			{name:'Gokul',city:'chennai'},
+			{name:'Deepak',city:'chennai'},
+			{name:'Raj',city:'chennai'}
+		];	
+	}
+	<script>

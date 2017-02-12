@@ -1,0 +1,23 @@
+Modules:
+=========
+
+	Just a containers for:
+
+		* Controllers
+		* Routes
+		* Factores/Services
+		* Directives
+		* Filters
+
+	<html ng-app="app">
+
+	</html>
+
+	Create a module with a name and reference it using ng-app directive.
+
+	Modules may rely on functionality of 3rd party modules.
+
+	Helper modules can be injected into a module.
+	
+
+	var demoApp = angular.module('app',['helperModules']);
