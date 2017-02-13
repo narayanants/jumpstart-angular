@@ -9,15 +9,10 @@ app.config(['$routeProvider',function($routeProvider) {
 			controllerAs:'cust',
 			template:'/apps/views/customers.html'
 		})
-		.when('/orders',{
+		.when('/orders/:customerId',{
 			controller:'OrderCtrl',
 			controllerAs:'order',
 			template:'/apps/views/orders.html'
-		})
-		.when('/editCustomer/:customerId',{
-			controller:'CustCtrl',
-			controllerAs:'cust',
-			template:'/apps/views/customerEdit.html'
 		})
 		.otherwise({redirectTo:'/'});
 }]);
